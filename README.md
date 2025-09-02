@@ -35,3 +35,10 @@ In the root directory of your Flarum installation, run:
 
 ```bash
 composer require capybash/magicbb:^0.1.0
+```
+
+## 🔗 Links
+
+- [**GitHub Repository**](https://github.com/capybash/magicbb)  
+- [**Packagist**](https://packagist.org/packages/capybash/magicbb)  
+- [**Extiverse**](https://extiverse.com/extension/capybash/magicbb)
