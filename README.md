@@ -9,7 +9,7 @@ Supports **Flarum 2.x**.
 
 - 🖊️ Adds composer toolbar buttons
 - 🎨 Extra BBCode tags:  
-  `[center]`, `[justify]`, `[color]`, `[spoiler]`, `[table]`, `[info]`, `[ileft]`, `[iright]`
+  `[center]`, `[justify]`, `[color]`, `[spoiler]`, `[table]`, `[info]`, `[error]`, `[success]`, `[warning]`, `[ileft]`, `[iright]`, `[hr]`, `[abbr]`, `[sub]`
 - 📦 Custom formatting styles for:
   - Alerts
   - Spoilers
