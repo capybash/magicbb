@@ -1,0 +1,29 @@
+capybash-magicbb:
+  admin:
+    settings:
+      bb_center: Center text
+      bb_center_help: Helps bring into focus
+      bb_justify: Justify text
+      bb_justify_help: Helps format long paragraphs
+      bb_color: Color text
+      bb_color_help: Helps add emphasis with color
+      bb_spoiler: Spoiler with title
+      bb_spoiler_help: Helps hide information
+      bb_table: Table
+      bb_table_help: Helps structure data
+      bb_info: Info with title
+      bb_info_help: Helps draw attention
+      bb_ileft: Image left
+      bb_ileft_help: Helps shift the image to the left
+      bb_iright: Image right
+      bb_iright_help: Helps shift the image to the right
+  forum:
+    composer:
+      center_button: Add align center
+      justify_button: Add justify
+      color_button: Add color
+      spoiler_button: Insert spoiler with title
+      table_button: Insert table
+      info_button: Insert info with title
+      ileft_button: Add image left
+      iright_button: Add image right

@@ -1,0 +1,29 @@
+capybash-magicbb:
+  admin:
+    settings:
+      bb_center: Выравнивание по центру
+      bb_center_help: Поможет быть в центре внимания
+      bb_justify: Выравнивание по ширине
+      bb_justify_help: Поможет оформить длинные абзацы
+      bb_color: Цвет текста
+      bb_color_help: Поможет расставить акценты
+      bb_spoiler: Спойлер с заголовком
+      bb_spoiler_help: Поможет спрятать информацию
+      bb_table: Таблица
+      bb_table_help: Поможет структурировать данные
+      bb_info: Инфо с заголовком
+      bb_info_help: Поможет привлечь внимание
+      bb_ileft: Картинка слева
+      bb_ileft_help: Поможет сдвинуть изображение влево
+      bb_iright: Картинка справа
+      bb_iright_help: Поможет сдвинуть изображение вправо
+  forum:
+    composer:
+      center_button: По центру
+      justify_button: По ширине
+      color_button: Цвет текста
+      spoiler_button: Спойлер с заголовком
+      table_button: Таблица
+      info_button: Инфо с заголовком
+      ileft_button: Картинка слева
+      iright_button: Картинка справа
