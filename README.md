@@ -40,3 +40,4 @@ composer require capybash/magicbb:^0.1.0
 - [**GitHub Repository**](https://github.com/capybash/magicbb)  
 - [**Packagist**](https://packagist.org/packages/capybash/magicbb)  
 - [**Extiverse**](https://extiverse.com/extension/capybash/magicbb)
+- [**Discuss**](https://discuss.flarum.org/d/38053-magicbb-extra-bbcodes-toolbar-buttons)
