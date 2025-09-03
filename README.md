@@ -20,7 +20,7 @@ MagicBB enhances your [Flarum](https://flarum.org) forum composer by adding hand
 ---
 
 ## 📸 Screenshots
-<img width="215" height="260" alt="Admin panel" src="https://github.com/user-attachments/assets/70e2449e-cf57-4eb7-bc09-98d7f33dfe12" />
+<img width="850" height="260" alt="image" src="https://github.com/user-attachments/assets/1aad5ae6-bd08-408d-a87a-a2f4e2bd2c1e" />
 <img width="850" height="120" alt="Composer buttons" src="https://github.com/user-attachments/assets/e97dc1c1-1a89-4881-b330-7e9b53e29276" />
 <img width="850" height="470" alt="image" src="https://github.com/user-attachments/assets/98ed9755-e50a-4bf8-bf83-d167239f23c9" />
 <img width="850" height="490" alt="image" src="https://github.com/user-attachments/assets/1665e56d-0fbe-4370-9b13-dc26015a1930" />
