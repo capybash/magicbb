@@ -9,10 +9,18 @@ class Configure
     public function __invoke(Configurator $config): void
     {
         $this->addAlert($config, 'info');
+        $this->addAlert($config, 'success');
+        $this->addAlert($config, 'warning');
+        $this->addAlert($config, 'error');
 
         $config->BBCodes->addCustom(
             '[spoiler title={TEXT;optional}]{TEXT}[/spoiler]',
-            '<details class="bb-spoiler"><xsl:if test="@title"><summary class="bb-spoiler__title"><xsl:value-of select="@title"/></summary></xsl:if><div class="bb-spoiler__body"><xsl:apply-templates/></div></details>'
+            '<details class="bb-spoiler">
+                <xsl:if test="@title">
+                    <summary class="bb-spoiler__title"><xsl:value-of select="@title"/></summary>
+                </xsl:if>
+                <div class="bb-spoiler__body"><xsl:apply-templates/></div>
+            </details>'
         );
 
         $config->BBCodes->addCustom('[hr]', '<hr class="bb-hr" />');
@@ -31,7 +39,10 @@ class Configure
         $config->BBCodes->addCustom('[th]{TEXT}[/th]',       '<th><xsl:apply-templates/></th>');
         $config->BBCodes->addCustom('[td]{TEXT}[/td]',       '<td><xsl:apply-templates/></td>');
 
-        $config->BBCodes->addCustom('[justify]{TEXT}[/justify]', '<div class="bb-justify"><xsl:apply-templates/></div>');
+        $config->BBCodes->addCustom(
+            '[justify]{TEXT}[/justify]',
+            '<div class="bb-justify"><xsl:apply-templates/></div>'
+        );
 
         $config->BBCodes->addCustom('[ileft]{URL}[/ileft]',   '<img src="{URL}" class="bb-img--left" />')->contentAttribute = 'url';
         $config->BBCodes->addCustom('[iright]{URL}[/iright]', '<img src="{URL}" class="bb-img--right" />')->contentAttribute = 'url';
