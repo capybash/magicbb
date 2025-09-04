@@ -32,6 +32,7 @@ class Configure
             '<abbr title="{@abbr}"><xsl:apply-templates/></abbr>'
         );
 
+        // Таблицы
         $config->BBCodes->addCustom('[table]{TEXT}[/table]', '<table class="bb-table"><xsl:apply-templates/></table>');
         $config->BBCodes->addCustom('[thead]{TEXT}[/thead]', '<thead><xsl:apply-templates/></thead>');
         $config->BBCodes->addCustom('[tbody]{TEXT}[/tbody]', '<tbody><xsl:apply-templates/></tbody>');
@@ -39,11 +40,12 @@ class Configure
         $config->BBCodes->addCustom('[th]{TEXT}[/th]',       '<th><xsl:apply-templates/></th>');
         $config->BBCodes->addCustom('[td]{TEXT}[/td]',       '<td><xsl:apply-templates/></td>');
 
-        $config->BBCodes->addCustom(
-            '[justify]{TEXT}[/justify]',
-            '<div class="bb-justify"><xsl:apply-templates/></div>'
-        );
+        // Выравнивание
+        $config->BBCodes->addCustom('[justify]{TEXT}[/justify]', '<div class="bb-justify"><xsl:apply-templates/></div>');
+        $config->BBCodes->addCustom('[left]{TEXT}[/left]',       '<div class="bb-left"><xsl:apply-templates/></div>');
+        $config->BBCodes->addCustom('[right]{TEXT}[/right]',     '<div class="bb-right"><xsl:apply-templates/></div>');
 
+        // Картинки с обтеканием
         $config->BBCodes->addCustom('[ileft]{URL}[/ileft]',   '<img src="{URL}" class="bb-img--left" />')->contentAttribute = 'url';
         $config->BBCodes->addCustom('[iright]{URL}[/iright]', '<img src="{URL}" class="bb-img--right" />')->contentAttribute = 'url';
 
