@@ -1,5 +1,5 @@
 # ✨ MagicBB for Flarum
-MagicBB enhances your [Flarum](https://flarum.org) forum composer by adding handy toolbar buttons, extra BBCodes, and unique text formatting styles. Supports **Flarum 2.x**.
+MagicBB enhances your [Flarum](https://flarum.org) forum composer by adding handy toolbar buttons, extra BBCodes, and unique text formatting styles. For **Flarum 2.x only**.
 
 ---
 
