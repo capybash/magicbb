@@ -31,7 +31,7 @@ MagicBB enhances your [Flarum](https://flarum.org) forum composer by adding hand
 ## 📦 Installation
 Run in your Flarum root directory:
 ```bash
-composer require capybash/magicbb:^0.1.0
+composer require capybash/magicbb:*
 ```
 
 ---
