@@ -6,7 +6,7 @@ MagicBB enhances your [Flarum](https://flarum.org) forum composer by adding hand
 ## 🚀 Features
 - 🖊️ Adds composer toolbar buttons
 - 🎨 Extra BBCode tags:  
-  `[center]`, `[justify]`, `[color]`, `[spoiler]`, `[table]`, `[info]`, `[error]`, `[success]`, `[warning]`, `[ileft]`, `[iright]`, `[hr]`, `[abbr]`, `[sub]`
+  `[left]`, `[right]`, `[justify]`, `[color]`, `[spoiler]`, `[table]`, `[info]`, `[error]`, `[success]`, `[warning]`, `[ileft]`, `[iright]`, `[hr]`, `[abbr]`, `[sub]`
   
 - 📦 Custom formatting styles for:
   - Alerts
