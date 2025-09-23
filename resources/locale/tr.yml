@@ -1,0 +1,29 @@
+capybash-magicbb:
+  admin:
+    settings:
+      bb_center: Metni ortala
+      bb_center_help: Metni ortaya hizalar
+      bb_justify: İki yana yasla
+      bb_justify_help: Metni her iki kenara hizalar
+      bb_color: Metin rengi
+      bb_color_help: Metni vurgular
+      bb_spoiler: Başlıklı spoiler
+      bb_spoiler_help: İçeriği daraltılabilir bir blokta gizler
+      bb_table: Tablo
+      bb_table_help: Verileri satır ve sütunlarda yapılandırır
+      bb_info: Başlıklı bilgi
+      bb_info_help: Önemli bilgileri vurgular
+      bb_ileft: Solda görsel
+      bb_ileft_help: Görseli sola hizalar ve gönderi genişliğinin %40’ına yeniden boyutlandırır
+      bb_iright: Sağda görsel
+      bb_iright_help: Görseli sağa hizalar ve gönderi genişliğinin %40’ına yeniden boyutlandırır
+  forum:
+    composer:
+      center_button: Ortalamayı ekle
+      justify_button: İki yana yaslamayı ekle
+      color_button: Renk ekle
+      spoiler_button: Başlıklı spoiler ekle
+      table_button: Tablo ekle
+      info_button: Başlıklı bilgi ekle
+      ileft_button: Sola görsel ekle
+      iright_button: Sağa görsel ekle
