@@ -2,21 +2,21 @@ capybash-magicbb:
   admin:
     settings:
       bb_center: Center text
-      bb_center_help: Helps bring into focus
+      bb_center_help: Aligns text to the center
       bb_justify: Justify text
-      bb_justify_help: Helps format long paragraphs
-      bb_color: Color text
-      bb_color_help: Helps add emphasis with color
+      bb_justify_help: Aligns text to both margins
+      bb_color: Text color
+      bb_color_help: Emphasizes text
       bb_spoiler: Spoiler with title
-      bb_spoiler_help: Helps hide information
+      bb_spoiler_help: Hides content under a collapsible block
       bb_table: Table
-      bb_table_help: Helps structure data
+      bb_table_help: Structures data in rows and columns
       bb_info: Info with title
-      bb_info_help: Helps draw attention
+      bb_info_help: Highlights important information
       bb_ileft: Image left
-      bb_ileft_help: Helps shift the image to the left
+      bb_ileft_help: Aligns image to the left and resizes to 40% of post width
       bb_iright: Image right
-      bb_iright_help: Helps shift the image to the right
+      bb_iright_help: Aligns image to the right and resizes to 40% of post width
   forum:
     composer:
       center_button: Add align center
