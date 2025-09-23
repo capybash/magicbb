@@ -1,0 +1,29 @@
+capybash-magicbb:
+  admin:
+    settings:
+      bb_center: Centrer le texte
+      bb_center_help: Aligne le texte au centre
+      bb_justify: Justifier le texte
+      bb_justify_help: Aligne le texte sur les deux marges
+      bb_color: Couleur du texte
+      bb_color_help: Met le texte en valeur
+      bb_spoiler: Spoiler avec titre
+      bb_spoiler_help: Masque le contenu dans un bloc repliable
+      bb_table: Tableau
+      bb_table_help: Structure les données en lignes et colonnes
+      bb_info: Info avec titre
+      bb_info_help: Met en évidence les informations importantes
+      bb_ileft: Image à gauche
+      bb_ileft_help: Aligne l’image à gauche et redimensionne à 40 % de la largeur du message
+      bb_iright: Image à droite
+      bb_iright_help: Aligne l’image à droite et redimensionne à 40 % de la largeur du message
+  forum:
+    composer:
+      center_button: Ajouter alignement centré
+      justify_button: Ajouter justification
+      color_button: Ajouter couleur
+      spoiler_button: Insérer spoiler avec titre
+      table_button: Insérer tableau
+      info_button: Insérer info avec titre
+      ileft_button: Ajouter image à gauche
+      iright_button: Ajouter image à droite
