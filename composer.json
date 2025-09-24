@@ -9,12 +9,12 @@
     "flarum"
   ],
   "license": "MIT",
+  "homepage": "https://github.com/capybash/magicbb",
   "support": {
     "issues": "https://github.com/capybash/magicbb/issues",
     "source": "https://github.com/capybash/magicbb",
     "forum": "https://discuss.flarum.org/d/38053-magicbb-extra-bbcodes-toolbar-buttons"
   },
-  "homepage": "https://github.com/capybash/magicbb",
   "authors": [
     {
       "name": "capybash",
@@ -29,6 +29,11 @@
   "autoload": {
     "psr-4": {
       "Capybash\\MagicBB\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Capybash\\MagicBB\\Tests\\": "tests/"
     }
   },
   "extra": {
@@ -62,17 +67,7 @@
       }
     }
   },
-  "repositories": [
-    {
-      "type": "path",
-      "url": "../../*/*"
-    }
-  ],
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "autoload-dev": {
-    "psr-4": {
-      "Capybash\\MagicBB\\Tests\\": "tests/"
-    }
+  "config": {
+    "sort-packages": true
   }
 }

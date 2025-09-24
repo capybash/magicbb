@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "capybash-magicbb",
-  "version": "0.1.0",
+  "version": "2.0.2",
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack --mode development --watch"

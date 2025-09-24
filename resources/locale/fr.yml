@@ -1,29 +1,36 @@
 capybash-magicbb:
   admin:
     settings:
-      bb_center: Centrer le texte
+      bb_center: Centré
       bb_center_help: Aligne le texte au centre
-      bb_justify: Justifier le texte
-      bb_justify_help: Aligne le texte sur les deux marges
-      bb_color: Couleur du texte
-      bb_color_help: Met le texte en valeur
+      bb_justify: Justifié
+      bb_justify_help: Étend le texte aux deux marges
+      bb_color: Couleur
+      bb_color_help: Colore le texte pour mettre en valeur
       bb_spoiler: Spoiler avec titre
       bb_spoiler_help: Masque le contenu dans un bloc repliable
       bb_table: Tableau
-      bb_table_help: Structure les données en lignes et colonnes
+      bb_table_help: Organise les données en lignes et colonnes
       bb_info: Info avec titre
       bb_info_help: Met en évidence les informations importantes
-      bb_ileft: Image à gauche
-      bb_ileft_help: Aligne l’image à gauche et redimensionne à 40 % de la largeur du message
-      bb_iright: Image à droite
-      bb_iright_help: Aligne l’image à droite et redimensionne à 40 % de la largeur du message
+      bb_ileft: Image gauche
+      bb_ileft_help: Aligne l’image à gauche et réduit à 40 % de la largeur du message
+      bb_iright: Image droite
+      bb_iright_help: Aligne l’image à droite et réduit à 40 % de la largeur du message
+    sections:
+      text: Boutons de texte
+      text_help: Alignez et formatez le texte
+      content: Boutons de contenu
+      content_help: Structurez et mettez en valeur l’information
+      images: Boutons d’images
+      images_help: Placez et ajustez les images
   forum:
     composer:
-      center_button: Ajouter alignement centré
-      justify_button: Ajouter justification
-      color_button: Ajouter couleur
-      spoiler_button: Insérer spoiler avec titre
-      table_button: Insérer tableau
-      info_button: Insérer info avec titre
-      ileft_button: Ajouter image à gauche
-      iright_button: Ajouter image à droite
+      center_button: Centré
+      justify_button: Justifié
+      color_button: Couleur
+      spoiler_button: Spoiler avec titre
+      table_button: Tableau
+      info_button: Info avec titre
+      ileft_button: Image gauche
+      iright_button: Image droite

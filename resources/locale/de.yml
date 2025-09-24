@@ -1,29 +1,36 @@
 capybash-magicbb:
   admin:
     settings:
-      bb_center: Text zentrieren
-      bb_center_help: Richtet Text zentriert aus
+      bb_center: Zentriert
+      bb_center_help: Richtet Text in die Mitte aus
       bb_justify: Blocksatz
-      bb_justify_help: Richtet Text an beiden Rändern aus
-      bb_color: Textfarbe
-      bb_color_help: Betont Text
+      bb_justify_help: Streckt Text über die gesamte Breite
+      bb_color: Farbe
+      bb_color_help: Färbt Text zur Hervorhebung
       bb_spoiler: Spoiler mit Titel
-      bb_spoiler_help: Verbirgt Inhalt in einem aufklappbaren Block
+      bb_spoiler_help: Verbirgt Inhalt in einem ausklappbaren Block
       bb_table: Tabelle
       bb_table_help: Strukturiert Daten in Zeilen und Spalten
       bb_info: Info mit Titel
       bb_info_help: Hebt wichtige Informationen hervor
       bb_ileft: Bild links
-      bb_ileft_help: Richtet das Bild links aus und skaliert auf 40% der Beitragsbreite
+      bb_ileft_help: Richtet das Bild links aus und skaliert auf 40 % der Beitragsbreite
       bb_iright: Bild rechts
-      bb_iright_help: Richtet das Bild rechts aus und skaliert auf 40% der Beitragsbreite
+      bb_iright_help: Richtet das Bild rechts aus und skaliert auf 40 % der Beitragsbreite
+    sections:
+      text: Text-Buttons
+      text_help: Text ausrichten und formatieren
+      content: Inhalts-Buttons
+      content_help: Informationen strukturieren und hervorheben
+      images: Bild-Buttons
+      images_help: Bilder platzieren und skalieren
   forum:
     composer:
-      center_button: Zentrierung hinzufügen
-      justify_button: Blocksatz hinzufügen
-      color_button: Farbe hinzufügen
-      spoiler_button: Spoiler mit Titel einfügen
-      table_button: Tabelle einfügen
-      info_button: Info mit Titel einfügen
-      ileft_button: Bild links hinzufügen
-      iright_button: Bild rechts hinzufügen
+      center_button: Zentrieren
+      justify_button: Blocksatz
+      color_button: Farbe
+      spoiler_button: Spoiler mit Titel
+      table_button: Tabelle
+      info_button: Info mit Titel
+      ileft_button: Bild links
+      iright_button: Bild rechts

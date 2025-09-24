@@ -32,7 +32,6 @@ class Configure
             '<abbr title="{@abbr}"><xsl:apply-templates/></abbr>'
         );
 
-        // Таблицы
         $config->BBCodes->addCustom('[table]{TEXT}[/table]', '<table class="bb-table"><xsl:apply-templates/></table>');
         $config->BBCodes->addCustom('[thead]{TEXT}[/thead]', '<thead><xsl:apply-templates/></thead>');
         $config->BBCodes->addCustom('[tbody]{TEXT}[/tbody]', '<tbody><xsl:apply-templates/></tbody>');
@@ -40,12 +39,10 @@ class Configure
         $config->BBCodes->addCustom('[th]{TEXT}[/th]',       '<th><xsl:apply-templates/></th>');
         $config->BBCodes->addCustom('[td]{TEXT}[/td]',       '<td><xsl:apply-templates/></td>');
 
-        // Выравнивание
         $config->BBCodes->addCustom('[justify]{TEXT}[/justify]', '<div class="bb-justify"><xsl:apply-templates/></div>');
         $config->BBCodes->addCustom('[left]{TEXT}[/left]',       '<div class="bb-left"><xsl:apply-templates/></div>');
         $config->BBCodes->addCustom('[right]{TEXT}[/right]',     '<div class="bb-right"><xsl:apply-templates/></div>');
 
-        // Картинки с обтеканием
         $config->BBCodes->addCustom('[ileft]{URL}[/ileft]',   '<img src="{URL}" class="bb-img--left" />')->contentAttribute = 'url';
         $config->BBCodes->addCustom('[iright]{URL}[/iright]', '<img src="{URL}" class="bb-img--right" />')->contentAttribute = 'url';
 
@@ -55,8 +52,8 @@ class Configure
     protected function addAlert(Configurator $config, string $name): void
     {
         $config->BBCodes->addCustom(
-            '['.$name.' title={TEXT;optional} font={COLOR;optional} bg={COLOR;optional} border={COLOR;optional}]{TEXT}[/'.$name.']',
-            '<div class="bb-alert bb-alert--'.$name.'">
+            '[' . $name . ' title={TEXT;optional} font={COLOR;optional} bg={COLOR;optional} border={COLOR;optional}]{TEXT}[/' . $name . ']',
+            '<div class="bb-alert bb-alert--' . $name . '">
                 <xsl:attribute name="style">
                     <xsl:if test="@bg">background: <xsl:value-of select="@bg"/>;</xsl:if>
                     <xsl:if test="@border">border-color: <xsl:value-of select="@border"/>;</xsl:if>

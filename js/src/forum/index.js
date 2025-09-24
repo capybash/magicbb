@@ -10,12 +10,12 @@ app.initializers.add('capybash-magicbb-buttons', () => {
     const el = () => this.attrs?.composer?.editor?.el;
     const editor = () => this.attrs?.composer?.editor;
 
-    const on = (k) => {
-      const v = app.forum.attribute(k);
+    const on = (key) => {
+      const v = app.forum.attribute(key);
       return v === undefined || v === null ? true : !!v;
     };
 
-    const addBtn = (key, icon, title, style, prio) => {
+    const addBtn = (key, icon, title, style, prio, defaultText = '') => {
       items.add(
         key,
         m(TextEditorButton, {
@@ -24,8 +24,16 @@ app.initializers.add('capybash-magicbb-buttons', () => {
           onclick: (e) => {
             e?.preventDefault?.();
             const node = el();
-            if (!node) return;
-            styleSelectedText(node, style);
+            const ed = editor();
+            if (!node || !ed) return;
+
+            const hasSelection = node.selectionStart !== node.selectionEnd;
+
+            if (!hasSelection && defaultText) {
+              ed.insertAtCursor((style.prefix || '') + defaultText + (style.suffix || ''));
+            } else {
+              styleSelectedText(node, style);
+            }
           },
         }),
         prio
@@ -37,7 +45,7 @@ app.initializers.add('capybash-magicbb-buttons', () => {
         'bb-center',
         'fas fa-align-center',
         app.translator.trans('capybash-magicbb.forum.composer.center_button'),
-        { prefix: '[center]', suffix: '[/center]', trimFirst: true, multiline: true, surroundWithNewlines: false },
+        { prefix: '[center]', suffix: '[/center]', trimFirst: true, multiline: true },
         100
       );
     }
@@ -47,7 +55,7 @@ app.initializers.add('capybash-magicbb-buttons', () => {
         'bb-justify',
         'fas fa-align-justify',
         app.translator.trans('capybash-magicbb.forum.composer.justify_button'),
-        { prefix: '[justify]', suffix: '[/justify]', trimFirst: true, multiline: true, surroundWithNewlines: false },
+        { prefix: '[justify]', suffix: '[/justify]', trimFirst: true, multiline: true },
         99
       );
     }
@@ -57,8 +65,9 @@ app.initializers.add('capybash-magicbb-buttons', () => {
         'bb-color',
         'fas fa-palette',
         app.translator.trans('capybash-magicbb.forum.composer.color_button'),
-        { prefix: '[color=#FF0000]Merlin', suffix: '[/color]', trimFirst: true, multiline: false, surroundWithNewlines: false },
-        98
+        { prefix: '[color=#FF0000]', suffix: '[/color]' },
+        98,
+        'Heading'
       );
     }
 
@@ -67,8 +76,9 @@ app.initializers.add('capybash-magicbb-buttons', () => {
         'bb-spoiler',
         'fas fa-layer-group',
         app.translator.trans('capybash-magicbb.forum.composer.spoiler_button'),
-        { prefix: '[spoiler title=Heading]Subtitle', suffix: '[/spoiler]', trimFirst: true, multiline: true, surroundWithNewlines: false },
-        97
+        { prefix: '[spoiler title=Heading]', suffix: '[/spoiler]' },
+        97,
+        'Subtitle'
       );
     }
 
@@ -99,8 +109,9 @@ app.initializers.add('capybash-magicbb-buttons', () => {
         'bb-info',
         'fas fa-circle-info',
         app.translator.trans('capybash-magicbb.forum.composer.info_button'),
-        { prefix: '[info title=Heading font="White" bg="#466995" border="#466995"]Subtitle', suffix: '[/info]', trimFirst: true, multiline: true, surroundWithNewlines: false },
-        95
+        { prefix: '[info title=Heading]', suffix: '[/info]' },
+        95,
+        'Subtitle'
       );
     }
 

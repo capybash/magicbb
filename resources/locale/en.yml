@@ -1,29 +1,36 @@
 capybash-magicbb:
   admin:
     settings:
-      bb_center: Center text
+      bb_center: Center
       bb_center_help: Aligns text to the center
-      bb_justify: Justify text
-      bb_justify_help: Aligns text to both margins
-      bb_color: Text color
-      bb_color_help: Emphasizes text
+      bb_justify: Justify
+      bb_justify_help: Stretches text across post width
+      bb_color: Color
+      bb_color_help: Colors text for emphasis
       bb_spoiler: Spoiler with title
-      bb_spoiler_help: Hides content under a collapsible block
+      bb_spoiler_help: Hides content inside a collapsible block
       bb_table: Table
-      bb_table_help: Structures data in rows and columns
+      bb_table_help: Structures data into rows and columns
       bb_info: Info with title
       bb_info_help: Highlights important information
       bb_ileft: Image left
       bb_ileft_help: Aligns image to the left and resizes to 40% of post width
       bb_iright: Image right
       bb_iright_help: Aligns image to the right and resizes to 40% of post width
+    sections:
+      text: Text buttons
+      text_help: Align and format text
+      content: Content buttons
+      content_help: Structure and highlight information
+      images: Image buttons
+      images_help: Place and resize images
   forum:
     composer:
-      center_button: Add align center
-      justify_button: Add justify
-      color_button: Add color
-      spoiler_button: Insert spoiler with title
-      table_button: Insert table
-      info_button: Insert info with title
-      ileft_button: Add image left
-      iright_button: Add image right
+      center_button: Center
+      justify_button: Justify
+      color_button: Color
+      spoiler_button: Spoiler with title
+      table_button: Table
+      info_button: Info with title
+      ileft_button: Image left
+      iright_button: Image right

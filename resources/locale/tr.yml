@@ -1,29 +1,36 @@
 capybash-magicbb:
   admin:
     settings:
-      bb_center: Metni ortala
+      bb_center: Ortala
       bb_center_help: Metni ortaya hizalar
-      bb_justify: İki yana yasla
+      bb_justify: Yasla
       bb_justify_help: Metni her iki kenara hizalar
-      bb_color: Metin rengi
-      bb_color_help: Metni vurgular
+      bb_color: Renk
+      bb_color_help: Metni vurgulamak için renklendirir
       bb_spoiler: Başlıklı spoiler
       bb_spoiler_help: İçeriği daraltılabilir bir blokta gizler
       bb_table: Tablo
-      bb_table_help: Verileri satır ve sütunlarda yapılandırır
+      bb_table_help: Verileri satır ve sütunlara yerleştirir
       bb_info: Başlıklı bilgi
-      bb_info_help: Önemli bilgileri vurgular
-      bb_ileft: Solda görsel
-      bb_ileft_help: Görseli sola hizalar ve gönderi genişliğinin %40’ına yeniden boyutlandırır
-      bb_iright: Sağda görsel
-      bb_iright_help: Görseli sağa hizalar ve gönderi genişliğinin %40’ına yeniden boyutlandırır
+      bb_info_help: Önemli bilgileri öne çıkarır
+      bb_ileft: Görsel sola
+      bb_ileft_help: Görseli sola hizalar ve gönderi genişliğini %40’a küçültür
+      bb_iright: Görsel sağa
+      bb_iright_help: Görseli sağa hizalar ve gönderi genişliğini %40’a küçültür
+    sections:
+      text: Metin düğmeleri
+      text_help: Metni hizalayın ve biçimlendirin
+      content: İçerik düğmeleri
+      content_help: Bilgiyi yapılandırın ve vurgulayın
+      images: Görsel düğmeleri
+      images_help: Görselleri ekleyin ve yeniden boyutlandırın
   forum:
     composer:
-      center_button: Ortalamayı ekle
-      justify_button: İki yana yaslamayı ekle
-      color_button: Renk ekle
-      spoiler_button: Başlıklı spoiler ekle
-      table_button: Tablo ekle
-      info_button: Başlıklı bilgi ekle
-      ileft_button: Sola görsel ekle
-      iright_button: Sağa görsel ekle
+      center_button: Ortala
+      justify_button: Yasla
+      color_button: Renk
+      spoiler_button: Başlıklı spoiler
+      table_button: Tablo
+      info_button: Başlıklı bilgi
+      ileft_button: Görsel sola
+      iright_button: Görsel sağa

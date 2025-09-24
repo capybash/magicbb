@@ -1,29 +1,36 @@
 capybash-magicbb:
   admin:
     settings:
-      bb_center: 文本居中
+      bb_center: 居中
       bb_center_help: 将文本对齐到中间
       bb_justify: 两端对齐
       bb_justify_help: 将文本对齐到左右边距
-      bb_color: 文本颜色
-      bb_color_help: 强调文本
-      bb_spoiler: 带标题的折叠
+      bb_color: 颜色
+      bb_color_help: 通过颜色突出显示文本
+      bb_spoiler: 折叠（含标题）
       bb_spoiler_help: 在可折叠块中隐藏内容
       bb_table: 表格
-      bb_table_help: 以行和列组织数据
-      bb_info: 带标题的信息
-      bb_info_help: 突出重要信息
-      bb_ileft: 左侧图片
-      bb_ileft_help: 将图片左对齐并缩放至帖子宽度的40%
-      bb_iright: 右侧图片
-      bb_iright_help: 将图片右对齐并缩放至帖子宽度的40%
+      bb_table_help: 将数据组织成行和列
+      bb_info: 信息（含标题）
+      bb_info_help: 突出显示重要信息
+      bb_ileft: 左图
+      bb_ileft_help: 将图片左对齐并缩放至帖子宽度的 40%
+      bb_iright: 右图
+      bb_iright_help: 将图片右对齐并缩放至帖子宽度的 40%
+    sections:
+      text: 文本按钮
+      text_help: 控制文本的对齐和样式
+      content: 内容按钮
+      content_help: 构建和强调信息
+      images: 图片按钮
+      images_help: 插入并调整图片大小
   forum:
     composer:
-      center_button: 添加居中对齐
-      justify_button: 添加两端对齐
-      color_button: 添加颜色
-      spoiler_button: 插入带标题的折叠
-      table_button: 插入表格
-      info_button: 插入带标题的信息
-      ileft_button: 添加左侧图片
-      iright_button: 添加右侧图片
+      center_button: 居中
+      justify_button: 两端对齐
+      color_button: 颜色
+      spoiler_button: 折叠（含标题）
+      table_button: 表格
+      info_button: 信息（含标题）
+      ileft_button: 左图
+      iright_button: 右图

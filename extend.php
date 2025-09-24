@@ -13,7 +13,8 @@ return [
         ->js(__DIR__ . '/js/dist/forum.js'),
 
     (new Extend\Frontend('admin'))
-        ->js(__DIR__ . '/js/dist/admin.js'),
+        ->js(__DIR__ . '/js/dist/admin.js')
+        ->css(__DIR__ . '/resources/less/admin.less'),
 
     (new Extend\Settings())
         ->default('capybash-magicbb.bb_center',  '1')
