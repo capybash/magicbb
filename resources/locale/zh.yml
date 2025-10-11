@@ -1,0 +1,32 @@
+capybash-magicbb:
+  admin:
+    settings:
+      bb_center: 居中
+      bb_justify: 两端对齐
+      bb_color: 颜色
+      bb_spoiler: 折叠
+      bb_table: 表格
+      bb_info: 提示
+      bb_image: 智能图片
+      bb_image_help: 居中的大图会自动调整为帖子宽度的 60%，左右对齐的图片 — 调整为 40%。此功能不影响默认图片 BBCode。
+      bb_iframe: iframe
+      bb_iframe_help: 允许从任意来源嵌入 iframe。请谨慎使用 — 嵌入内容可能包含外部脚本。🧹 修改此设置后，请清除 Flarum 缓存。
+    sections:
+      text: 文本按钮
+      text_help: 调整并设置文本格式
+      content: 内容按钮
+      content_help: 构建并突出信息
+      images: 图片按钮
+      images_help: 放置并缩放图片
+      features: 功能
+    permissions:
+      use_iframe: 允许使用 iframe
+  forum:
+    composer:
+      center_button: 插入居中
+      justify_button: 插入两端对齐
+      color_button: 插入颜色
+      spoiler_button: 插入折叠
+      table_button: 插入表格
+      info_button: 插入提示
+      image_button: 插入图片

@@ -1,0 +1,32 @@
+capybash-magicbb:
+  admin:
+    settings:
+      bb_center: Zentrieren
+      bb_justify: Blocksatz
+      bb_color: Farbe
+      bb_spoiler: Spoiler
+      bb_table: Tabelle
+      bb_info: Hinweise
+      bb_image: Intelligente Bilder
+      bb_image_help: Große zentrierte Bilder werden automatisch auf 60 % der Beitragsbreite verkleinert. Seitlich ausgerichtete Bilder – auf 40 %. Beeinflusst nicht den Standard-BBCode für Bilder.
+      bb_iframe: iframe
+      bb_iframe_help: Ermöglicht das Einbetten von iframes aus beliebigen Quellen. Vorsicht — eingebettete Inhalte können externe Skripte enthalten. 🧹 Nach dem Ändern dieser Einstellung bitte den Flarum-Cache leeren.
+    sections:
+      text: Text-Schaltflächen
+      text_help: Text ausrichten und formatieren
+      content: Inhalts-Schaltflächen
+      content_help: Informationen strukturieren und hervorheben
+      images: Bild-Schaltflächen
+      images_help: Bilder positionieren und skalieren
+      features: Funktionen
+    permissions:
+      use_iframe: iframe erlauben
+  forum:
+    composer:
+      center_button: Zentrieren
+      justify_button: Blocksatz
+      color_button: Farbe hinzufügen
+      spoiler_button: Spoiler hinzufügen
+      table_button: Tabelle hinzufügen
+      info_button: Hinweis hinzufügen
+      image_button: Bild hinzufügen

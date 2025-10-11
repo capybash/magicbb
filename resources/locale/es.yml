@@ -1,0 +1,32 @@
+capybash-magicbb:
+  admin:
+    settings:
+      bb_center: Centrado
+      bb_justify: Justificado
+      bb_color: Color
+      bb_spoiler: Spoiler
+      bb_table: Tabla
+      bb_info: Avisos
+      bb_image: Imágenes inteligentes
+      bb_image_help: Las imágenes grandes centradas se redimensionan automáticamente al 60 % del ancho de la publicación. Las alineadas a los lados — al 40 %. Esta función no afecta al BBCode de imagen predeterminado.
+      bb_iframe: iframe
+      bb_iframe_help: Permite insertar iframes desde cualquier fuente. Úsalo con precaución — el contenido incrustado puede incluir scripts externos. 🧹 Después de cambiar esta opción, limpia la caché de Flarum.
+    sections:
+      text: Botones de texto
+      text_help: Alinea y formatea el texto
+      content: Botones de contenido
+      content_help: Estructura y resalta la información
+      images: Botones de imagen
+      images_help: Coloca y ajusta imágenes
+      features: Funciones
+    permissions:
+      use_iframe: Permitir iframe
+  forum:
+    composer:
+      center_button: Añadir centrado
+      justify_button: Añadir justificado
+      color_button: Añadir color
+      spoiler_button: Añadir spoiler
+      table_button: Añadir tabla
+      info_button: Añadir aviso
+      image_button: Añadir imagen

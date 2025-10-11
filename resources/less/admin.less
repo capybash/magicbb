@@ -1,0 +1,137 @@
+.MagicBBPage {
+  --mbb-card-radius: 12px;
+  --mbb-card-radius-sm: 8px;
+  --mbb-transition-speed: 180ms;
+  --mbb-shadow-sm: 0 1px 3px rgba(0,0,0,.08);
+  --mbb-shadow-md: 0 2px 8px rgba(0,0,0,.10);
+
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .MagicBBPage { padding: 16px 12px; }
+}
+
+.MagicBBPage-content{
+  background: var(--body-bg, #fff);
+  border: 1px solid var(--control-bg, #e5e7eb);
+  border-radius: var(--mbb-card-radius);
+  padding: 20px;
+}
+@media (max-width: 768px){
+  .MagicBBPage-content{ padding: 16px; }
+}
+
+.MagicBB-SettingsSection{
+  margin-bottom: 24px;
+  background: color-mix(in srgb, var(--control-bg, #e5e7eb) 25%, transparent);
+  border: 1px solid var(--control-bg, #e5e7eb);
+  border-radius: var(--mbb-card-radius);
+  padding: 20px;
+}
+.MagicBB-SettingsSection:last-child{ margin-bottom: 0; }
+
+.MagicBB-SettingsSection > h3{
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-color, #111827);
+  margin: 0 0 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--control-bg, #e5e7eb);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.MagicBB-SettingsSection > h3 i{
+  color: var(--primary-color, #6d28d9);
+  font-size: 18px;
+  width: 28px; height: 28px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: color-mix(in srgb, var(--primary-color, #6d28d9) 8%, transparent);
+  border-radius: 6px;
+}
+
+.MagicBB-SettingsSection-content{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.MagicBBPage .Form-group{ margin-bottom: 0; }
+
+.MagicBBPage .Form-group label{
+  display: block;
+  font-weight: 600;
+  color: var(--text-color, #111827);
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.MagicBBPage .Form-group .helpText{
+  font-size: 12px;
+  color: var(--muted-color, #6b7280);
+  margin-top: 6px;
+  line-height: 1.5;
+  padding-left: 10px;
+  border-left: 2px solid var(--control-bg, #e5e7eb);
+}
+
+.MagicBBPage input[type="text"],
+.MagicBBPage input[type="number"],
+.MagicBBPage select,
+.MagicBBPage textarea{
+  width: 100%;
+  max-width: 520px;
+  padding: 10px 14px;
+  border: 1px solid var(--control-bg, #e5e7eb);
+  border-radius: 8px;
+  font-size: 14px;
+  background: var(--body-bg, #fff);
+  transition: border-color var(--mbb-transition-speed) ease;
+}
+.MagicBBPage input[type="number"]{ max-width: 180px; }
+
+.MagicBBPage input[type="text"]:focus,
+.MagicBBPage input[type="number"]:focus,
+.MagicBBPage select:focus,
+.MagicBBPage textarea:focus{
+  border-color: var(--primary-color, #6d28d9);
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary-color, #6d28d9) 10%, transparent);
+}
+
+.MagicBBPage .Switch,
+.MagicBBPage .checkbox{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  transition: background var(--mbb-transition-speed) ease;
+}
+.MagicBBPage .Switch:hover,
+.MagicBBPage .checkbox:hover{
+  background: color-mix(in srgb, var(--control-bg, #e5e7eb) 30%, transparent);
+}
+
+.Button--primary.Button--submit{ margin-top: 24px; }
+
+.MagicBBPage .Button,
+.MagicBBPage a,
+.MagicBBPage button{ outline: none; }
+
+.MagicBBPage .Button:focus-visible,
+.MagicBBPage a:focus-visible,
+.MagicBBPage button:focus-visible{
+  outline: 2px solid var(--primary-color, #6d28d9);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce){
+  .MagicBBPage *{
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+  }
+}
