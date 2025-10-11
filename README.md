@@ -1,5 +1,5 @@
 # ✨ MagicBB for Flarum
-MagicBB enhances your [Flarum](https://flarum.org) forum composer by adding handy toolbar buttons, extra BBCodes, and unique text formatting styles. For **Flarum 2.x only**.
+MagicBB enhances your [Flarum](https://flarum.org) forum composer by adding handy toolbar buttons, extra BBCodes, and unique text formatting styles. Support Flarum 1.x and 2.x
 
 ---
 
@@ -19,10 +19,10 @@ MagicBB enhances your [Flarum](https://flarum.org) forum composer by adding hand
 ---
 
 ## 📸 Screenshots
-<img width="850" height="410" alt="image" src="https://github.com/user-attachments/assets/ff992fc9-fadd-480b-a86a-e82da49889be" />
+<img width="850" height="415" alt="image" src="https://github.com/user-attachments/assets/38bea81a-b10b-4db6-bc13-9e1d0fdbef35" />
 <img width="850" height="90" alt="image" src="https://github.com/user-attachments/assets/979a2037-8658-42bb-9448-8e00bb0ec4fc" />
 <img width="850" height="215" alt="image" src="https://github.com/user-attachments/assets/f6ed58ec-ef3f-4335-8f11-ff31511cc6c1" />
-<img width="850" height="470" alt="image" src="https://github.com/user-attachments/assets/98ed9755-e50a-4bf8-bf83-d167239f23c9" />
+<img width="850" height="400" alt="image" src="https://github.com/user-attachments/assets/054eefe5-0b9c-4404-9974-f2d821018940" />
 <img width="850" height="490" alt="image" src="https://github.com/user-attachments/assets/1665e56d-0fbe-4370-9b13-dc26015a1930" />
 
 
