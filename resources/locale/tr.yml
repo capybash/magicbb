@@ -1,0 +1,32 @@
+capybash-magicbb:
+  admin:
+    settings:
+      bb_center: Ortala
+      bb_justify: Yasla
+      bb_color: Renk
+      bb_spoiler: Spoiler
+      bb_table: Tablo
+      bb_info: Bildirimler
+      bb_image: Akıllı görseller
+      bb_image_help: Ortalanmış büyük görseller otomatik olarak gönderi genişliğinin %60’ına yeniden boyutlandırılır. Kenarlara hizalananlar — %40’a. Bu özellik varsayılan görsel BBCode’unu etkilemez.
+      bb_iframe: iframe
+      bb_iframe_help: Herhangi bir kaynaktan iframe yerleştirmeye izin verir. Dikkatli kullanın — gömülü içerik harici komut dosyaları içerebilir. 🧹 Bu ayarı değiştirdikten sonra Flarum önbelleğini temizleyin.
+    sections:
+      text: Metin düğmeleri
+      text_help: Metni hizalayın ve biçimlendirin
+      content: İçerik düğmeleri
+      content_help: Bilgiyi yapılandırın ve vurgulayın
+      images: Görsel düğmeleri
+      images_help: Görselleri konumlandırın ve ölçekleyin
+      features: Özellikler
+    permissions:
+      use_iframe: iframe kullanımına izin ver
+  forum:
+    composer:
+      center_button: Ortalamayı ekle
+      justify_button: Yaslamayı ekle
+      color_button: Renk ekle
+      spoiler_button: Spoiler ekle
+      table_button: Tablo ekle
+      info_button: Bildirim ekle
+      image_button: Görsel ekle

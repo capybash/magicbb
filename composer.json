@@ -1,0 +1,94 @@
+{
+  "name": "capybash/magicbb",
+  "description": "MagicBB enhances your forum composer by adding handy buttons, extra BBCodes, and unique text formatting styles.",
+  "type": "flarum-extension",
+  "keywords": [
+    "bbcode",
+    "formatting",
+    "composer",
+    "flarum"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/capybash/magicbb",
+  "support": {
+    "issues": "https://github.com/capybash/magicbb/issues",
+    "source": "https://github.com/capybash/magicbb",
+    "forum": "https://discuss.flarum.org/d/38053-magicbb-extra-bbcodes-toolbar-buttons"
+  },
+  "authors": [
+    {
+      "name": "capybash",
+      "homepage": "https://github.com/capybash"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "flarum/core": "^1.8",
+    "s9e/text-formatter": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Capybash\\MagicBB\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Capybash\\MagicBB\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-main": "1.x-dev"
+    },
+    "flarum-extension": {
+      "title": "Magic BBCodes",
+      "category": "Formatting",
+      "icon": {
+        "name": "fas fa-wand-magic-sparkles",
+        "backgroundColor": "#6A5ACD",
+        "color": "#ffffff"
+      }
+    },
+    "flarum-cli": {
+      "modules": {
+        "admin": true,
+        "forum": true,
+        "js": true,
+        "jsCommon": false,
+        "css": true,
+        "gitConf": true,
+        "githubActions": true,
+        "prettier": true,
+        "typescript": false,
+        "bundlewatch": false,
+        "backendTesting": true,
+        "editorConfig": true,
+        "styleci": true
+      }
+    }
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../magicbb",
+      "options": {
+        "symlink": true
+      }
+    }
+  ],
+  "require-dev": {
+    "flarum/phpstan": "*"
+  },
+  "scripts": {
+    "analyse:phpstan": "phpstan analyse",
+    "clear-cache:phpstan": "phpstan clear-result-cache"
+  },
+  "scripts-descriptions": {
+    "analyse:phpstan": "Run static analysis"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true
+  }
+}
