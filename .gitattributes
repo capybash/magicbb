@@ -1,0 +1,5 @@
+/.github export-ignore
+/tests export-ignore
+/.editorconfig export-ignore
+/.gitignore export-ignore
+/js/node_modules export-ignore

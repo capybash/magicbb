@@ -1,0 +1,5 @@
+/node_modules/
+/js/node_modules/
+/vendor/
+.DS_Store
+npm-debug.log*
