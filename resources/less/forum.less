@@ -1,0 +1,399 @@
+.bb-alert {
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin: 12px 0;
+  line-height: 1.45;
+  border: 1px solid transparent;
+}
+
+.bb-alert__head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.bb-alert__icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, .05);
+  flex: 0 0 22px;
+  color: inherit;
+}
+
+.bb-alert__icon::before {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.bb-alert__title {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.bb-alert__body {
+  font-size: 14px;
+}
+
+.bb-alert--info {
+  background: #eff6ff;
+  border-color: #60a5fa;
+  color: #1d4ed8;
+}
+
+.bb-alert--success {
+  background: #ecfdf5;
+  border-color: #34d399;
+  color: #047857;
+}
+
+.bb-alert--warning {
+  background: #fffbeb;
+  border-color: #fbbf24;
+  color: #b45309;
+}
+
+.bb-alert--error {
+  background: #fef2f2;
+  border-color: #f87171;
+  color: #b91c1c;
+}
+
+.bb-alert--info .bb-alert__icon::before {
+  content: "\24D8\FE0E";
+}
+
+.bb-alert--success .bb-alert__icon::before {
+  content: "\2714\FE0E";
+}
+
+.bb-alert--warning .bb-alert__icon::before {
+  content: "\26A0\FE0E";
+}
+
+.bb-alert--error .bb-alert__icon::before {
+  content: "\2716\FE0E";
+}
+
+.bb-spoiler {
+  margin: 12px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--control-bg);
+  color: var(--text-color);
+  transition: background .2s ease, box-shadow .2s ease;
+}
+
+.bb-spoiler:hover {
+  background: rgba(0, 0, 0, .03);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+}
+
+.dark .bb-spoiler:hover {
+  background: rgba(255, 255, 255, .05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .35);
+}
+
+.bb-spoiler > summary.bb-spoiler__title {
+  cursor: pointer;
+  padding: 10px 12px;
+  font-weight: 600;
+  list-style: none;
+  text-align: center;
+  position: relative;
+  color: inherit;
+  background: inherit;
+}
+
+.bb-spoiler > summary.bb-spoiler__title::before {
+  content: "▾";
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.bb-spoiler[open] > summary.bb-spoiler__title::before {
+  content: "▴";
+}
+
+.bb-spoiler__body {
+  padding: 10px 12px;
+  color: inherit;
+  background: inherit;
+}
+
+.bb-spoiler > summary.bb-spoiler__title {
+  list-style: none;
+}
+
+.bb-spoiler > summary.bb-spoiler__title::-webkit-details-marker {
+  display: none;
+}
+
+.bb-spoiler > summary.bb-spoiler__title.bb-spoiler__title--image::before,
+.bb-spoiler[open] > summary.bb-spoiler__title.bb-spoiler__title--image::before {
+  content: none !important;
+}
+
+.bb-spoiler > summary.bb-spoiler__title.bb-spoiler__title--image::-webkit-details-marker {
+  display: none !important;
+}
+
+.bb-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 4px;
+  table-layout: auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.bb-table thead th {
+  background: #496589;
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 12px;
+  border-radius: 6px;
+  text-align: left;
+  white-space: normal;
+}
+
+.bb-table tbody td {
+  background: var(--control-bg);
+  color: var(--text-color);
+  padding: 10px 12px;
+  border-radius: 6px;
+  vertical-align: top;
+  white-space: normal;
+}
+
+.dark .bb-table thead th {
+  background: #3f5575;
+}
+
+.bb-hr {
+  height: 1px;
+  border: 0;
+  background: var(--control-bg, #e5e7eb);
+}
+
+.bb-justify {
+  text-align: justify;
+}
+
+.bb-left {
+  text-align: left;
+}
+
+.bb-right {
+  text-align: right;
+}
+
+.Post-body img.bb-img.bb-img--left,
+.Post-body .bb-img.bb-img--left {
+  float: left;
+  margin: 1px 4px 1px 0;
+  padding: 0;
+  max-width: 40%;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+}
+
+.Post-body img.bb-img.bb-img--right,
+.Post-body .bb-img.bb-img--right {
+  float: right;
+  margin: 1px 0 1px 4px;
+  padding: 0;
+  max-width: 40%;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+}
+
+.Post-body img.bb-img.bb-img--center,
+.Post-body .bb-img.bb-img--center {
+  display: block;
+  margin: 1px auto;
+  max-width: 60%;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+}
+
+.Magicbb-ImagePopover,
+.Magicbb-ColorPopover,
+.Magicbb-AlertPopover {
+  position: fixed;
+  z-index: 1000;
+  padding: 8px;
+  background: var(--control-bg);
+  color: var(--text-color);
+  border: 1px solid rgba(0, 0, 0, .06);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+}
+
+.dark .Magicbb-ImagePopover,
+.dark .Magicbb-ColorPopover,
+.dark .Magicbb-AlertPopover {
+  border-color: rgba(255, 255, 255, .08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
+}
+
+.Magicbb-ImageGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 32px);
+  gap: 8px;
+  padding: 0;
+}
+
+.Magicbb-ImageChoice {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: none;
+  outline: none;
+}
+
+.Magicbb-ImageChoice .icon {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.Magicbb-ColorGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 28px);
+  gap: 8px;
+  padding: 0;
+}
+
+.Magicbb-Color {
+  width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.TextEditor-controls > li.item-bb-color > .Button,
+.TextEditor-controls > li.item-bb-info > .Button {
+  vertical-align: middle;
+  background: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
+  color: inherit !important;
+}
+
+.TextEditor-controls > li.item-bb-color > .Button:hover,
+.TextEditor-controls > li.item-bb-color > .Button:focus,
+.TextEditor-controls > li.item-bb-color > .Button:active,
+.TextEditor-controls > li.item-bb-color > .Button:focus-visible,
+.TextEditor-controls > li.item-bb-color > .Button.active,
+.TextEditor-controls > li.item-bb-color > .Button.is-active,
+.TextEditor-controls > li.item-bb-color > .Button[aria-pressed='true'],
+.TextEditor-controls > li.item-bb-info > .Button:hover,
+.TextEditor-controls > li.item-bb-info > .Button:focus,
+.TextEditor-controls > li.item-bb-info > .Button:active,
+.TextEditor-controls > li.item-bb-info > .Button:focus-visible,
+.TextEditor-controls > li.item-bb-info > .Button.active,
+.TextEditor-controls > li.item-bb-info > .Button.is-active,
+.TextEditor-controls > li.item-bb-info > .Button[aria-pressed='true'] {
+  background: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
+  color: inherit !important;
+}
+
+.Magicbb-AlertGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 32px);
+  gap: 8px;
+  padding: 0;
+}
+
+.Magicbb-AlertChoice {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: none;
+  outline: none;
+}
+
+.Magicbb-AlertChoice .icon {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.bb-media { text-align: left; }
+.bb-media--center { text-align: center; }
+.bb-media--right { text-align: right; }
+
+.bb-media img,
+.bb-media video,
+.bb-media canvas,
+.bb-media iframe {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.bb-media a > img { display: inline-block; }
+
+.Post-body .bb-media img,
+.Post-body .bb-media a > img,
+.Post-body .bb-media video,
+.Post-body .bb-media iframe,
+.Post-body .bb-media canvas {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.Post-body .bb-media--left img,
+.Post-body .bb-media--left a > img,
+.Post-body .bb-media--left video,
+.Post-body .bb-media--left iframe,
+.Post-body .bb-media--left canvas {
+  float: left;
+  margin: 1px 6px 1px 0;
+  max-width: 40%;
+}
+
+.Post-body .bb-media--right img,
+.Post-body .bb-media--right a > img,
+.Post-body .bb-media--right video,
+.Post-body .bb-media--right iframe,
+.Post-body .bb-media--right canvas {
+  float: right;
+  margin: 1px 0 1px 6px;
+  max-width: 40%;
+}
+
+.Post-body .bb-media--center img,
+.Post-body .bb-media--center a > img,
+.Post-body .bb-media--center video,
+.Post-body .bb-media--center iframe,
+.Post-body .bb-media--center canvas {
+  display: block;
+  margin: 1px auto;
+  max-width: 60%;
+}
