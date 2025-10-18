@@ -28,6 +28,7 @@ return [
         ->default('capybash-magicbb.bb_info', '1')
         ->default('capybash-magicbb.bb_image', '1')
         ->default('capybash-magicbb.bb_iframe', '1')
+        ->default('capybash-magicbb.toolbar_group', '0')
         ->serializeToForum('bb_center',  'capybash-magicbb.bb_center',  'boolval')
         ->serializeToForum('bb_justify', 'capybash-magicbb.bb_justify', 'boolval')
         ->serializeToForum('bb_color',   'capybash-magicbb.bb_color',   'boolval')
@@ -35,7 +36,8 @@ return [
         ->serializeToForum('bb_table',   'capybash-magicbb.bb_table',   'boolval')
         ->serializeToForum('bb_info',    'capybash-magicbb.bb_info',    'boolval')
         ->serializeToForum('bb_image',   'capybash-magicbb.bb_image',   'boolval')
-        ->serializeToForum('bb_iframe',  'capybash-magicbb.bb_iframe',  'boolval'),
+        ->serializeToForum('bb_iframe',  'capybash-magicbb.bb_iframe',  'boolval')
+        ->serializeToForum('bb_toolbar_group', 'capybash-magicbb.toolbar_group', 'boolval'),
 
     (new Extend\Event())
         ->listen(PostSaving::class, AssertIframePermission::class),

@@ -4,16 +4,16 @@
     "../vendor/flarum/core/js/dist-typings/@types/global.d.ts",
     "src/**/*"
   ],
-  "files": [
-    "shims.d.ts"
-  ],
+  "files": ["shims.d.ts"],
   "compilerOptions": {
+    "jsx": "react",
+    "jsxFactory": "m",
+
     "declarationDir": "./dist-typings",
+
     "baseUrl": ".",
     "paths": {
-      "flarum/*": [
-        "../vendor/flarum/core/js/dist-typings/*"
-      ]
+      "flarum/*": ["../vendor/flarum/core/js/dist-typings/*"]
     }
   }
 }
