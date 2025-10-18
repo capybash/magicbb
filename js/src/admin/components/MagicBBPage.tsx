@@ -94,6 +94,14 @@ export default class MagicBBPage extends ExtensionPage {
                 label: app.translator.trans('capybash-magicbb.admin.settings.bb_iframe'),
                 help: app.translator.trans('capybash-magicbb.admin.settings.bb_iframe_help'),
               })}
+            </div>,
+            <div className="Form-group">
+              {this.buildSettingComponent({
+                type: 'boolean',
+                setting: 'capybash-magicbb.toolbar_group',
+                label: app.translator.trans('capybash-magicbb.admin.settings.toolbar_group'),
+                help: app.translator.trans('capybash-magicbb.admin.settings.toolbar_group_help'),
+              })}
             </div>
           )}
 
