@@ -1,4 +1,5 @@
 import Component from 'flarum/common/Component';
+import app from 'flarum/forum/app';
 import m from 'mithril';
 
 const CHOICES = [
@@ -53,6 +54,8 @@ export default class ImageAlignPopover extends Component {
   view(vnode) {
     const label = vnode.attrs.label || 'Image';
     const onPick = vnode.attrs.onPick || function () {};
+    const settingIcon = app.forum.attribute('capybash-magicbb.icon_image');
+    const icon = settingIcon || vnode.attrs.icon || 'fas fa-images';
 
     const trigger = m(
       'button.Button.Button--icon',
@@ -69,7 +72,7 @@ export default class ImageAlignPopover extends Component {
         oncreate: (v) => { this.anchor = v.dom; },
         style: 'background:transparent;box-shadow:none;transform:none;',
       },
-      m('i', { className: 'icon fas fa-images', 'aria-hidden': 'true' })
+      m('i', { className: 'icon ' + icon, 'aria-hidden': 'true' })
     );
 
     let style = null;

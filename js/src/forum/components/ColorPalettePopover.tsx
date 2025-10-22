@@ -1,4 +1,5 @@
 import Component from 'flarum/common/Component';
+import app from 'flarum/forum/app';
 import m from 'mithril';
 
 const DEFAULT_COLORS = [
@@ -50,7 +51,9 @@ export default class ColorPalettePopover extends Component {
   }
 
   view(vnode) {
-    const { label, icon = 'fas fa-palette', colors = DEFAULT_COLORS, onSelect } = vnode.attrs;
+    const { label, colors = DEFAULT_COLORS, onSelect } = vnode.attrs;
+    const iconSetting = app.forum.attribute<string>('capybash-magicbb.icon_color');
+    const icon = iconSetting || vnode.attrs.icon || 'fas fa-palette';
 
     const trigger = m(
       'button.Button.Button--icon',

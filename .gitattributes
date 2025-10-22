@@ -1,5 +1,10 @@
-/.github export-ignore
-/tests export-ignore
-/.editorconfig export-ignore
+/.gitattributes export-ignore
 /.gitignore export-ignore
-/js/node_modules export-ignore
+/.github export-ignore
+/phpunit.xml export-ignore
+/tests export-ignore
+/.vscode export-ignore
+/.idea export-ignore
+js/dist/**/* -diff
+js/dist/**/* linguist-generated
+* text=auto eol=lf

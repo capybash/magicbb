@@ -1,13 +1,8 @@
 {
   "name": "capybash/magicbb",
-  "description": "MagicBB enhances your forum composer by adding handy buttons, extra BBCodes, and unique text formatting styles.",
+  "description": "Extra BBCodes, handy toolbar buttons, and unique text formatting for the forum composer.",
   "type": "flarum-extension",
-  "keywords": [
-    "bbcode",
-    "formatting",
-    "composer",
-    "flarum"
-  ],
+  "keywords": ["flarum", "flarum-extension", "bbcode", "formatting", "composer", "toolbar", "magic"],
   "license": "MIT",
   "homepage": "https://github.com/capybash/magicbb",
   "support": {
@@ -18,52 +13,30 @@
   "authors": [
     {
       "name": "capybash",
+      "role": "Developer",
       "homepage": "https://github.com/capybash"
     }
   ],
   "require": {
     "php": ">=8.2",
-    "flarum/core": "^2.0",
-    "s9e/text-formatter": "^2.0"
+    "flarum/core": "^2.0"
   },
   "autoload": {
     "psr-4": {
       "Capybash\\MagicBB\\": "src/"
     }
   },
-  "autoload-dev": {
-    "psr-4": {
-      "Capybash\\MagicBB\\Tests\\": "tests/"
-    }
-  },
   "extra": {
     "branch-alias": {
-      "dev-main": "2.x-dev"
+      "dev-2.x": "2.x-dev"
     },
     "flarum-extension": {
       "title": "Magic BBCodes",
-      "category": "Formatting",
+      "category": "formatting",
       "icon": {
         "name": "fas fa-wand-magic-sparkles",
         "backgroundColor": "#6A5ACD",
         "color": "#ffffff"
-      }
-    },
-    "flarum-cli": {
-      "modules": {
-        "admin": true,
-        "forum": true,
-        "js": true,
-        "jsCommon": false,
-        "css": true,
-        "gitConf": true,
-        "githubActions": true,
-        "prettier": true,
-        "typescript": false,
-        "bundlewatch": false,
-        "backendTesting": true,
-        "editorConfig": true,
-        "styleci": true
       }
     }
   },
