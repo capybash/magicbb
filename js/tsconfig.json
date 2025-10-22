@@ -1,16 +1,11 @@
 {
   "extends": "flarum-tsconfig",
   "include": [
-    "../vendor/flarum/core/js/dist-typings/@types/global.d.ts",
-    "src/**/*"
+    "src/**/*",
+    "../vendor/flarum/core/js/dist-typings/@types/**/*"
   ],
-  "files": ["shims.d.ts"],
   "compilerOptions": {
-    "jsx": "react",
-    "jsxFactory": "m",
-
     "declarationDir": "./dist-typings",
-
     "baseUrl": ".",
     "paths": {
       "flarum/*": ["../vendor/flarum/core/js/dist-typings/*"]

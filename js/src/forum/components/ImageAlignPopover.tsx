@@ -51,6 +51,7 @@ export default class ImageAlignPopover extends Component {
 
   view(vnode) {
     const label = vnode.attrs.label || 'Image';
+    const icon = vnode.attrs.icon || 'fas fa-images';
     const onPick = vnode.attrs.onPick || function () {};
 
     const trigger = m(
@@ -68,7 +69,7 @@ export default class ImageAlignPopover extends Component {
         oncreate: (v) => { this.anchor = v.dom; },
         style: 'background:transparent;box-shadow:none;transform:none;',
       },
-      m('i', { className: 'icon fas fa-images', 'aria-hidden': 'true' })
+      m('i', { className: 'icon ' + icon, 'aria-hidden': 'true' })
     );
 
     let style = null;

@@ -58,6 +58,9 @@ app.initializers.add('capybash-magicbb-buttons', () => {
           asMenuSub: () => { key: string; title: string; icon?: string; renderSub: () => Mithril.Children };
         };
 
+    const iconOf = (name: string, fallback: string) =>
+      (app.forum.attribute(`icon_${name}`) as string) || fallback;
+
     const pool: PoolItem[] = [];
 
     const addBtn = (key, icon, title, style, prio, defaultText = '') => {
@@ -88,7 +91,7 @@ app.initializers.add('capybash-magicbb-buttons', () => {
     if (featureOn('bb_center')) {
       addBtn(
         'bb-center',
-        'fas fa-align-center',
+        iconOf('center', 'fas fa-align-center'),
         app.translator.trans('capybash-magicbb.forum.composer.center_button'),
         { prefix: '[center]', suffix: '[/center]', trimFirst: true, multiline: true },
         100
@@ -98,7 +101,7 @@ app.initializers.add('capybash-magicbb-buttons', () => {
     if (featureOn('bb_justify')) {
       addBtn(
         'bb-justify',
-        'fas fa-align-justify',
+        iconOf('justify', 'fas fa-align-justify'),
         app.translator.trans('capybash-magicbb.forum.composer.justify_button'),
         { prefix: '[justify]', suffix: '[/justify]', trimFirst: true, multiline: true },
         99
@@ -107,9 +110,11 @@ app.initializers.add('capybash-magicbb-buttons', () => {
 
     if (featureOn('bb_color')) {
       const label = app.translator.trans('capybash-magicbb.forum.composer.color_button');
+      const colorIcon = iconOf('color', 'fas fa-palette');
 
       const colorPopover = m(ColorPalettePopover, {
         label,
+        icon: colorIcon,
         colors: DEFAULT_COLORS,
         onSelect: (hex: string) => {
           const node = el();
@@ -128,12 +133,12 @@ app.initializers.add('capybash-magicbb-buttons', () => {
         key: 'bb-color',
         prio: 98,
         title: label,
-        icon: 'fas fa-palette',
+        icon: colorIcon,
         vnode: colorPopover,
         asMenuSub: () => ({
           key: 'bb-color',
           title: label,
-          icon: 'fas fa-palette',
+          icon: colorIcon,
           renderSub: () => colorPopover,
         }),
       } as PoolItem);
@@ -142,7 +147,7 @@ app.initializers.add('capybash-magicbb-buttons', () => {
     if (featureOn('bb_spoiler')) {
       addBtn(
         'bb-spoiler',
-        'fas fa-layer-group',
+        iconOf('spoiler', 'fas fa-layer-group'),
         app.translator.trans('capybash-magicbb.forum.composer.spoiler_button'),
         { prefix: '[spoiler title=Heading]', suffix: '[/spoiler]' },
         97,
@@ -152,6 +157,7 @@ app.initializers.add('capybash-magicbb-buttons', () => {
 
     if (featureOn('bb_table')) {
       const title = app.translator.trans('capybash-magicbb.forum.composer.table_button');
+      const tableIcon = iconOf('table', 'fas fa-table');
       const handler = (e?: MouseEvent) => {
         e?.preventDefault?.();
         const ed = editor();
@@ -168,17 +174,19 @@ app.initializers.add('capybash-magicbb-buttons', () => {
         key: 'bb-table',
         prio: 96,
         title,
-        icon: 'fas fa-table',
-        vnode: m(TextEditorButton, { icon: 'fas fa-table', title, onclick: handler }),
-        asMenu: () => ({ key: 'bb-table', title, icon: 'fas fa-table', onClick: handler }),
+        icon: tableIcon,
+        vnode: m(TextEditorButton, { icon: tableIcon, title, onclick: handler }),
+        asMenu: () => ({ key: 'bb-table', title, icon: tableIcon, onClick: handler }),
       } as PoolItem);
     }
 
     if (featureOn('bb_info')) {
       const label = app.translator.trans('capybash-magicbb.forum.composer.info_button');
+      const infoIcon = iconOf('info', 'fas fa-info-circle');
 
       const alertPopover = m(AlertPickerPopover, {
         label,
+        icon: infoIcon,
         onSelect: (a: any) => {
           const node = el();
           const ed = editor();
@@ -198,12 +206,12 @@ app.initializers.add('capybash-magicbb-buttons', () => {
         key: 'bb-info',
         prio: 95.5,
         title: label,
-        icon: 'fas fa-info-circle',
+        icon: infoIcon,
         vnode: alertPopover,
         asMenuSub: () => ({
           key: 'bb-info',
           title: label,
-          icon: 'fas fa-info-circle',
+          icon: infoIcon,
           renderSub: () => alertPopover,
         }),
       } as PoolItem);
@@ -211,9 +219,11 @@ app.initializers.add('capybash-magicbb-buttons', () => {
 
     if (featureOn('bb_image')) {
       const label = app.translator.trans('capybash-magicbb.forum.composer.image_button');
+      const imageIcon = iconOf('image', 'fas fa-image');
 
       const imagePopover = m(ImageAlignPopover, {
         label,
+        icon: imageIcon,
         onPick: (align: 'left' | 'right' | 'center') => {
           const node = el();
           const ed = editor();
@@ -247,12 +257,12 @@ app.initializers.add('capybash-magicbb-buttons', () => {
         key: 'bb-image',
         prio: 95,
         title: label,
-        icon: 'fas fa-image',
+        icon: imageIcon,
         vnode: imagePopover,
         asMenuSub: () => ({
           key: 'bb-image',
           title: label,
-          icon: 'fas fa-image',
+          icon: imageIcon,
           renderSub: () => imagePopover,
         }),
       } as PoolItem);
@@ -265,11 +275,14 @@ app.initializers.add('capybash-magicbb-buttons', () => {
         ('asMenuSub' in p ? (p as any).asMenuSub() : (p as any).asMenu())
       );
 
+      const moreIcon = iconOf('more', 'fas fa-wand-sparkles');
+
       items.add(
         'bb-more',
         m(MoreButtonsPopover, {
           items: menuItems,
           label: app.translator.trans('capybash-magicbb.forum.composer.more_button'),
+          icon: moreIcon,
         }),
         120
       );

@@ -1,4 +1,5 @@
 import Component from 'flarum/common/Component';
+import app from 'flarum/forum/app';
 
 const ALERTS = [
   { key: 'info',    icon: 'fas fa-circle-info',          font: '#1d4ed8', bg: '#eff6ff', border: '#60a5fa' },
@@ -48,7 +49,9 @@ export default class AlertPickerPopover extends Component {
   }
 
   view(vnode) {
-    const { label, icon = 'fas fa-circle-exclamation', onSelect } = vnode.attrs;
+    const { label, onSelect } = vnode.attrs;
+    const iconSetting = app.forum.attribute<string>('capybash-magicbb.icon_info');
+    const icon = iconSetting || vnode.attrs.icon || 'fas fa-circle-exclamation';
 
     const trigger = m(
       'button.Button.Button--icon',

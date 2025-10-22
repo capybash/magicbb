@@ -21,7 +21,7 @@ function isSub(item: MenuItem): item is SubPopoverAction {
   return typeof (item as any).renderSub === 'function';
 }
 
-export default class MoreButtonsPopover extends Component<{ items: MenuItem[]; label?: string }> {
+export default class MoreButtonsPopover extends Component<{ items: MenuItem[]; label?: string; icon?: string }> {
   private open = false;
   private anchor?: HTMLElement;
   private popEl?: HTMLElement;
@@ -37,7 +37,7 @@ export default class MoreButtonsPopover extends Component<{ items: MenuItem[]; l
       <span class="Magicbb-MoreWrap" style="display:inline-block">
         <Button
           className="Button Button--icon Button--link"
-          icon="fas fa-wand-sparkles"
+          icon={this.attrs.icon || 'fas fa-wand-sparkles'}
           onclick={(e: any) => {
             e?.preventDefault?.();
             this.anchor = e.currentTarget as HTMLElement;

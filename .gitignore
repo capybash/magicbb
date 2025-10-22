@@ -1,4 +1,10 @@
-/node_modules/
-/js/node_modules/
 /vendor/
+/node_modules/
+/js/dist/
+tests/.phpunit.cache
+tests/.phpunit.result.cache
+/tmp/
 .DS_Store
+Thumbs.db
+.vscode/
+.idea/
